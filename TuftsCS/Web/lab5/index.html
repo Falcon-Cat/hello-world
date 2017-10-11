@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>A Classic</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+<h1 id="title">A Classic</h1>
+
+<video src="https://www.cs.tufts.edu/comp/20/classic.mp4" id="a_classic" controls></video>
+<div id="lyrics"></div>
+
+<script>
+	video = document.getElementById("a_classic");
+	document.getElementById("lyrics").innerHTML = "Hello welcome to the song";
+	video.addEventListener("pause", function() { document.getElementById("lyrics").innerHTML = "";}, true);
+
+	video.addEventListener("timeupdate", function() {
+		if (video.currentTime < 9) {
+			document.getElementById("lyrics").innerHTML = "This is where the captions will be!";
+		} else if (video.currentTime > 9 && video.currentTime < 14) {
+			document.getElementById("lyrics").innerHTML = "Children have you ever met the bogeyman before";
+		} else if (video.currentTime > 14 && video.currentTime < 18) {
+			document.getElementById("lyrics").innerHTML = "No, of course you haven't for you're much too good, I'm sure;";
+
+		} else if (video.currentTime > 18 && video.currentTime < 22) {
+			document.getElementById("lyrics").innerHTML = "Don't you be afraid of him if he should visit you,";
+		} else if (video.currentTime > 22 && video.currentTime < 25) {
+			document.getElementById("lyrics").innerHTML = "He's a great big coward, so I'll tell you what to do";
+		} else if (video.currentTime > 25 && video.currentTime < 27) {
+			document.getElementById("lyrics").innerHTML = "Phew, that was a lot, now let's try stanza by stanza.";
+		} else if (video.currentTime > 27 && video.currentTime < 41) {
+			document.getElementById("lyrics").innerHTML = "Hush, hush, hush, here come the Bogeyman,\rDon't let him come too close to you, he'll catch you if he can.\rJust pretend that you're a crocodile\rAnd you will find that Bogeyman will run away a mile.";
+		} else if (video.currentTime > 41 && video.currentTime < 57) {
+			document.getElementById("lyrics").innerHTML = "Say shoo shoo and stick him with a pin\nBogeyman will very nearly jump out of his skin\nSay buzz buzz just like the wasps that sting\nBogeyman will think you are an elephant with wings";
+		} else if (video.currentTime > 57 && video.currentTime < 74) {
+			document.getElementById("lyrics").innerHTML = "Hush, hush, hush, here comes the Bogeyman\nTell him you've got soldiers in your bed\nFor he will never guess that they are only made of lead";
+		} else if (video.currentTime > 74 && video.currentTime < 80) {
+			document.getElementById("lyrics").innerHTML = "TRUMPET'S TIME TO SHINE!!!";
+		} else if (video.currentTime > 81 && video.currentTime < 96) {
+			document.getElementById("lyrics").innerHTML = "Say hush hush, he'll think that you're asleep\nIf you make a lovely snore away he'll softly creep\nSing this tune you children one and all\nBogeyman will run away, he'll think it's Henry Hall!";
+		} else if (video.currentTime > 96 && video.currentTime < 111) {
+			document.getElementById("lyrics").innerHTML = "When the shadows of the evening creep across the sky\nAnd your mummy comes upstairs to sing a lullaby\nTell her that the bogeyman no longer frightens you\nUncle Henry's very kindly told you what to do";
+		} else if (video.currentTime > 111 && video.currentTime < 127) {
+			document.getElementById("lyrics").innerHTML = "Hush, hush, hush, here comes the Bogeyman Don't let him come too close to you, He'll catch you if he can. Just pretend your teddy bear's a dog Then shout out, 'Fetch him, Teddy!' and he'll hop off like a frog.";
+		} else if (video.currentTime > 127 && video.currentTime < 135) {
+			document.getElementById("lyrics").innerHTML = "MORE TRUMPET!!!!";
+		} else if (video.currentTime > 135&& video.currentTime < 151) {
+			document.getElementById("lyrics").innerHTML = "Say Meoow, pretend that you're a cat He'll think you may scratch him that make him fall down flat Just pretend he isn't really there You will find that Bogey man will vanish in thin air";
+		} else if (video.currentTime > 151 && video.currentTime < 159) {
+			document.getElementById("lyrics").innerHTML = "FINAL DANCE BREAK!!";
+		} else if (video.currentTime > 159 && video.currentTime < 168) {
+			document.getElementById("lyrics").innerHTML = "Here's one way to catch him without fail Just keep a little salt with you and put it on his tail!";
+		}}, true)
+
+		
+</script>
+</body>
+</html>	
+
